@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
+
+/*
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  crossed lines - background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+
+  */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+/* header */
+header img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+header {
+
+  max-width: 80%;
+  width: 100%;
+  margin: 20px auto;
+}
+header h1 {
+  color: rgba(0, 0, 0, 0.61);
+  margin-bottom: 20px;
+  
+ 
+}
+
+main {
+  margin-bottom: 30px;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+.img-container div p {
+  font-size: 1.7em;
+  letter-spacing: 0.3em;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  text-align: center;
+  bottom: 50%;
+
+}
+main img{
+  opacity: 0.5;
+border-radius: 8px;
+ transition: transform 0.8s;
+ 
+}
+.img-container div {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
+  background-color: #ce7489 ;
+  background-repeat: no-repeat;
+  background-size: cover;
+   border-radius: 8px;
+   width: 353px;
+  height: 326px;
+  margin: 30px ;
+ 
+
+}
+.img-container div:nth-of-type(2) {
+  background-color: #6eb1d8;
+}
+.img-container div:nth-of-type(3) {
+  background-color: #73a49a;
+}
+.img-container div:nth-of-type(4) {
+  background-color: 
+  #bf6f8a;
+}
+.img-container div:nth-child(n+5) {
+  display: none;
+}
+
+main img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+/* footer */
+footer {
+  background-color:  #f6f6f6 ;
+ 
+
+}
+footer h2{
+  padding: 30px;
+  color: rgba(0, 0, 0, 0.61);
+   
+
+}
+/* icons */
+.icons {
+  height: 150px;
+  margin-left: 20px;
+}
+.icons i {
+  font-size: 2em;
+  border: 1px solid #5858587e ;
+  color: #585858;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+ transition: 0.3s;
+}
+i:nth-of-type(2) {
+  width: 34px;
+  text-align: center;
+}
+i:hover {
+  background-color: #5858582a;
+  box-shadow: 0 0  2px 2px #5858582a;
+  cursor: pointer;
+}
+/* input */
+input {
+  width: 86%;
+   border: none;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  padding: 10px;
+  margin:  20px;
+  background-color:  #f6f6f6 ;
+}
+textarea {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  width: 86%;
+  margin:  10px 20px;
+   padding: 10px;
+   background-color:  #f6f6f6 ;
+   
+}
+/* button */
+ button {
+    width: 90%;
+    margin:  20px 30px;
+    background-color: #585858;
+    padding: 20px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    border-radius: 10px;
+   
+   transition: 0.3s;
+ }
+ button:hover {
+   opacity: 0.5;
+   box-shadow: 0 0  2px 2px black;
+   cursor: pointer;
+ }
+ .copyright {
+   text-align: center;
+   color:#585858 ;
+ }
+ /* tablet */
+ @media (min-width:860px) {
+ 
+  .container {
+    max-width: 77%;
+    width: 90%;
+    margin: auto;
+  }
+   
+
+
+   .img-container div:nth-child(n+5) {
+     display:unset;
+  }
+   footer {
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: space-evenly;
+   
+   }
+   button {
+     width: 120px;
+     padding: 10px;
+      letter-spacing: 8px;
+     font-size: 1em;
+   }
+   input {
+    width: 39%;
+     border: none;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 10px;
+    margin:  20px;
+    background-color:  #f6f6f6 ;
+  }
+  .textarea {
+    width: 86%;
+  }
+   .copyright {
+     text-align: start;
+   }
+   .icons {
+     width: 250px;
+   
+   }
+  
+ }
