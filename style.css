@@ -12,16 +12,23 @@
 }
 
 /* header */
+.container {
+  max-width: 600px;
+  margin: auto;
+  width: 80%;
+}
 header img {
   width: 200px;
   margin-bottom: 20px;
 }
 
 header {
-
   max-width: 73%;
   width: 100%;
-  margin: 20px auto;
+  margin: 10px auto;
+}
+header p {
+  line-height: 30px;
 }
 header h1 {
   color: rgba(0, 0, 0, 0.61);
@@ -49,13 +56,12 @@ main {
   position: relative;
   text-align: center;
   bottom: 57%;
-
 }
+
 main img{
   opacity: 0.3;
 border-radius: 8px;
  transition: transform 0.5s;
-
 }
 /* img background */
 .img-container div {
@@ -64,7 +70,6 @@ border-radius: 8px;
   background-repeat: no-repeat;
   background-position:center;
   background-size:cover;
-
    border-radius: 8px;
    width: 353px;
   height: 326px;
@@ -129,6 +134,7 @@ border-radius: 8px;
 main img:hover {
   opacity: 1;
   transform: scale(1.1);
+  cursor: pointer;
 }
 /* footer */
 footer {
@@ -156,18 +162,17 @@ footer h2{
   border-radius: 8px;
   margin: 10px;
  transition: 0.3s;
-}
-i:nth-of-type(2) {
-  width: 34px;
-  text-align: center;
+ width: 34px;
+ text-align: center;
 }
 i:hover {
-  background-color: #5858582a;
+  background-color: #5858587e;
+  color: white;
   box-shadow: 0 0  2px 2px #5858582a;
   cursor: pointer;
 }
 /* input */
-input {
+input,textarea {
   width: 86%;
    border: none;
    border-bottom: 1px solid rgba(0, 0, 0, 0.274);
@@ -175,18 +180,10 @@ input {
   margin:  20px;
   background-color:  #f6f6f6 ;
 }
-textarea {
-  border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
-  width: 86%;
-  margin:  10px 20px;
-   padding: 10px;
-   background-color:  #f6f6f6 ;
-   
-}
+
 /* button */
  button {
-    width: 90%;
+    width: 86%;
     margin:  20px 30px;
     background-color: #585858;
     padding: 20px;
@@ -204,7 +201,7 @@ textarea {
    cursor: pointer;
  }
  .copyright {
-   text-align: center;
+   margin-left: 20px;
    color:#585858 ;
  }
  /* pc */
@@ -221,6 +218,7 @@ textarea {
 
    .img-container div:nth-child(n+5) {
      display:unset;
+     
   }
   .img-container div {
     margin: 10px;
@@ -248,9 +246,7 @@ textarea {
   .textarea {
     width: 86%;
   }
-   .copyright {
-     text-align: start;
-   }
+  
    .icons {
      width: 350px;
      
